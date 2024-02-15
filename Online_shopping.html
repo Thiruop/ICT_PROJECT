@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="online.css">
+</head>
+<body>
+    <center>
+    <header id="heading">
+        Welcome to Adi- Online Shopping
+    </header>
+    <table id="Ebill">
+        <tr>
+            <td>Customer Name</td>
+            <td id="custname"><input type="text" placeholder="Enter Customer Name" pattern="[A-Za-z ]+"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number</td>
+            <td id="mobileNumber"><input type="tel" pattern="[789]\d{9}" placeholder="Enter your mobile no"></td>
+        </tr>
+        <tr>
+            <td>Email Id</td>
+            <td id="email"><input type="email" placeholder="Enter Your Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"></td>
+        </tr>
+        <tr>
+            <td>Billing Address</td>
+            <td id="address"><textarea rows="5" cols="20" placeholder="Enter Your Address"></textarea></td>
+        </tr>
+        <tr>
+            <td>Choose Product</td>
+            <td id="product"><select>
+                <option value="TV">TV</option>
+                <option value="Refrigerator">Refrigerator</option>
+                <option value="Mobile">Mobile</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Enter Quantity</td>
+            <td id="quantity"><input type="number" placeholder="Enter Quantity" min="1"></td>
+        </tr>
+        <tr>
+            <td>Payment Mode</td>
+            <td id="mode"><select>
+                <option value="Cash On Delivery">Cash On Delivery</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Upi Transfer">Upi Transfer</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Bag Total</td>
+            <td id="bill"><input type="number" disabled></td>
+        </tr>
+        <tr>
+            <td>Coupon Code</td>
+            <td id="coupon" ><input type="text" readonly></td>
+        </tr>
+        <tr>
+            <td>Delivery Options</td>
+            <td><input type="radio" id="express" name="delivery">Express<input type="radio" id="standard" name="delivery">Standard</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="checkbox" id="terms" onclick="activeButton(this)">I Agree To the Terms & Condition</td>
+        </tr> 
+        <tr>
+            <td><input type="reset" value="Clear" id="reset"></td>
+            <td><input type="submit" id="submit" disabled></td>
+        </tr> 
+        <tr>
+            <td colspan="2"><div id="result"></div></td>
+        </tr>  
+    </table>
+</center>
+<script src="online.js"></script>
+</body>
+</html>
